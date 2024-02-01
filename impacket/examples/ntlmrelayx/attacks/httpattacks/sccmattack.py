@@ -72,7 +72,9 @@ class SCCMAttack:
             if result.startswith("<HTML>"):
                 result = self.requestPolicy(url, uuid, True, True)
                 decryptedResult = self.parseEncryptedPolicy(result)
-                Tools.write_to_file(decryptedResult, "naapolicy.xml")
+                #Tools.write_to_file(decryptedResult, "naapolicy.xml")
+                #print instead of write, cause of UTF errors
+                print(decryptedResult, "naapolicy.xml")
 
         LOG.info("Decrypted policy dumped to naapolicy.xml")
 
